@@ -3,8 +3,8 @@ public class DemoTask3 {
         int numberOne = 123;
         int numberTwo = 456;
         int numberThree = 7890;
-        String redColor = "033[35m";
-        String resetColor = "033[0m";
-        System.out.printf("");
+        final String RED_COLOR = "\033[35;1m";
+        final String RESET = "\033[0m";
+        System.out.printf("\n%s(%s)%s%s-%s \n\n",RED_COLOR,numberOne,RESET,numberTwo,numberThree);
     }
 }
